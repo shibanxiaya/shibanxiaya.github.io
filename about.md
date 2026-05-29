@@ -30,5 +30,5 @@ permalink: /about/
 
 ## 联系方式
 
-- 📧 Email: 704946175@qq.com
 - 🐙 GitHub: [shibanxiaya](https://github.com/shibanxiaya)
+- 🌐 博客: [shibanxiaya.github.io](https://shibanxiaya.github.io)
