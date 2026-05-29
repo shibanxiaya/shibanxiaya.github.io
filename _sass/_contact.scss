@@ -1,0 +1,73 @@
+/* ====== 联系区域 ====== */
+.contact-section {
+  background: var(--bg-secondary);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+.contact-item:hover {
+  border-color: var(--border-glow);
+  background: var(--bg-card-hover);
+  transform: translateX(4px);
+}
+
+.contact-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.contact-item p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.contact-cta {
+  text-align: center;
+  padding: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+}
+
+.cta-text {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}

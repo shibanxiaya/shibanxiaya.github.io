@@ -1,0 +1,41 @@
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="nav-logo">&lt;MW /&gt;</a>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>导航</h4>
+        <ul>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#blog">博客</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>链接</h4>
+        <ul>
+          <li><a href="{{ site.social_links.github }}" target="_blank">GitHub</a></li>
+          <li><a href="{{ site.social_links.email }}">Email</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+      <p class="footer-tech">
+        Built with
+        <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+        ✨ Powered by
+        <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+      </p>
+    </div>
+  </div>
+</footer>

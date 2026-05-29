@@ -1,0 +1,40 @@
+/* ====== 动画效果 ====== */
+
+/* 淡入上移 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* 滚动显示 */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 首页加载时立即显示 Hero 内容 */
+.hero .fade-up,
+.hero .reveal {
+  transition-delay: var(--delay, 0s);
+}
+
+/* 数字计数动画暂由 JS 处理，此处仅做样式准备 */
+.stat-number {
+  display: inline-block;
+}

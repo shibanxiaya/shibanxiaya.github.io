@@ -1,0 +1,47 @@
+title: "My World | Digital Space"
+email: 704946175@qq.com
+description: >-
+  探索艺术、科技与创造力的交汇点 — 个人技术博客 & 作品集
+baseurl: ""
+url: "https://shibanxiaya.github.io"
+
+author:
+  name: shibanxiaya
+  bio: 数字世界探索者 | ML/NLP学习者 | 全栈开发者
+
+# 社交链接
+social_links:
+  github: https://github.com/shibanxiaya
+  twitter: https://twitter.com
+  email: mailto:704946175@qq.com
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+timezone: Asia/Shanghai
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+# Sass 配置
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# 集合（可选）
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

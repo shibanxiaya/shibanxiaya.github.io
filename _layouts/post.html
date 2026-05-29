@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post-container">
+  <div class="container">
+    <header class="post-header reveal">
+      <p class="post-date">{{ page.date | date: "%Y年%m月%d日" }}</p>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <a href="/" class="btn btn-outline">← 返回首页</a>
+    </footer>
+  </div>
+</article>

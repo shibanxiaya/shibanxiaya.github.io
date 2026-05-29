@@ -1,0 +1,119 @@
+/* ====== 关于区域 ====== */
+.about-section {
+  background: var(--bg-secondary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+}
+.about-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08), transparent 70%);
+  pointer-events: none;
+}
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--border-glow);
+}
+
+.avatar-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  padding: 3px;
+  margin: 0 auto 20px;
+  animation: avatarPulse 4s ease-in-out infinite;
+}
+@keyframes avatarPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.25); }
+  50% { box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
+}
+
+.avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.about-role {
+  color: var(--accent-3);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+.about-text strong { color: var(--text-primary); }
+.about-text p { margin-bottom: 16px; }
+.about-text p:last-child { margin-bottom: 0; }
+
+/* 统计数据 */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border-color);
+}
+
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: 32px;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.stat-suffix {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+.stat-label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
