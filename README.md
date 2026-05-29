@@ -1,13 +1,14 @@
 # ✏️ 踩坑笔记本
 
-> 一个 Jekyll 静态博客，简笔画手绘风格，记录 ML/NLP 学习中的真实踩坑经历。
+> ML/NLP 学习者的个人博客 — Jekyll 静态站点，简笔画手绘风格，记录踩坑经历与项目实验。
 
-## 🎨 主题特色
+## 🎨 v2 主题特色
 
-- **简笔画手绘风格**：牛皮纸底色 + 手写体标题 + 涂鸦边框
-- **CSS 纯手绘装饰**：横线纸纹理、红色竖线、虚线边框、手绘下划线
+- **Hero 主页**：DiceBear 动态头像 + 身份标签 + GitHub 入口
+- **技能雷达**：四大分类（深度学习 / 数据处理 / 工具平台 / 正在学习）网格展示
+- **项目卡片**：MNIST、NLP对比、K-means聚类、充电预测四个实验项目
+- **简笔画手绘风格**：牛皮纸底色 + 横线纸纹理 + 手写体标题 + 不规则边框
 - **暖色调配色**：墨水色正文 + 红/蓝/绿笔标注 + 荧光笔高亮
-- **ZCOOL KuaiLe 字体**：标题使用俏皮的中文手写体
 - **响应式设计**：手机/平板/桌面全适配
 
 ## 📂 目录结构
@@ -15,8 +16,10 @@
 ```
 jekyll-blog/
 ├── _config.yml              # 站点配置
-├── index.md                 # 首页（带欢迎卡片）
-├── about.md                 # 关于页面
+├── _layouts/
+│   └── home.html            # 自定义首页布局（Hero+技能+项目+文章）
+├── index.md                 # 首页入口
+├── about.md                 # 关于页面（个人介绍+项目列表）
 ├── project.md               # 专题网站页面
 ├── Gemfile                  # Ruby 依赖
 ├── README.md                # 本文件
@@ -24,24 +27,22 @@ jekyll-blog/
 │   └── css/
 │       └── style.scss       # 自定义简笔画主题
 └── _posts/
-    ├── 2026-05-25-pytorch-version-hell.md     # PyTorch 版本不兼容
-    ├── 2026-05-26-kaggle-dataset-mirror.md    # Kaggle 数据集下载
-    ├── 2026-05-27-python-indentation.md       # Python 缩进惨案
-    └── 2026-05-28-docker-mirror-struggle.md   # Docker 镜像源
+    ├── 2026-05-25-pytorch-version-hell.md
+    ├── 2026-05-26-kaggle-dataset-mirror.md
+    ├── 2026-05-27-python-indentation.md
+    └── 2026-05-28-docker-mirror-struggle.md
 ```
 
 ## 🚀 本地运行
 
-### 方式一：Docker（推荐）
+### Docker（推荐）
 
 ```bash
-# 启动 Jekyll 开发服务器
 docker run --rm -v "$(pwd):/srv/jekyll" -p 4000:4000 jekyll/jekyll:latest jekyll serve --livereload
-
 # 访问 http://localhost:4000
 ```
 
-### 方式二：本地 Ruby
+### 本地 Ruby
 
 ```bash
 gem install bundler jekyll
@@ -51,9 +52,7 @@ bundle exec jekyll serve --livereload
 
 ## 📦 部署
 
-本仓库使用 **GitHub Pages** 自动部署。
-
-推送到 `main` 分支后，GitHub Actions 自动构建并发布到 [https://shibanxiaya.github.io](https://shibanxiaya.github.io)。
+推送到 `main` 分支后，GitHub Pages 自动构建并发布到 [https://shibanxiaya.github.io](https://shibanxiaya.github.io)。
 
 ## 📝 文章列表
 
@@ -70,11 +69,11 @@ bundle exec jekyll serve --livereload
 - **样式**：自定义 SCSS（零 JS 框架依赖）
 - **托管**：GitHub Pages
 - **字体**：ZCOOL KuaiLe（Google Fonts）
+- **头像**：DiceBear Avataaars API
 
 ## 📄 许可
 
-内容为个人学习笔记，仅供参考。代码片段可自由使用。
+内容为个人学习笔记，仅供参考。
 
 ---
-
 *每个 bug 都是一次学习的机会。*
