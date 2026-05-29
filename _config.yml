@@ -1,7 +1,7 @@
-# Jekyll 站点配置 - 探索机器学习的奇妙世界
-title: "🚀 代码与好奇心"
+# Jekyll 站点配置 — ✏️ 踩坑笔记本
+title: "✏️ 踩坑笔记本"
 description: >-
-  记录机器学习与NLP的探索之旅——实验、踩坑、思考与成长。
+  代码世界的摸爬滚打记录——Docker、Python、PyTorch、ML 实验中的真实踩坑经历。
 baseurl: ""
 url: "https://shibanxiaya.github.io"
 github_username: shibanxiaya

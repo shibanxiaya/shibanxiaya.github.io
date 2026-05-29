@@ -4,31 +4,35 @@ title: 关于
 permalink: /about/
 ---
 
-# 关于本站
+# 关于这个笔记本
 
-本博客使用 **Jekyll** 静态网站生成器搭建，托管于 **GitHub Pages**。
+## 为什么叫"踩坑笔记本"？
 
-## 搭建过程
+因为比起教科书式的教程，**踩坑的经历更有价值**。
 
-本站通过以下技术栈搭建：
+当你搜到一篇教程说"pip install 就完事了"，但实际上你遇到了网络超时、版本冲突、权限错误……这时候，真正能帮到你的是那些**记录踩坑过程**的文章。
 
-| 技术 | 用途 |
-|------|------|
-| Jekyll | 静态网站生成框架 |
-| Docker | 容器化开发环境 |
-| Markdown | 内容编写 |
-| GitHub Pages | 网站托管与自动部署 |
-| Minima | Jekyll 默认主题 |
+## 这个博客记录什么？
 
-## 实验说明
+- 🐳 Docker / 环境配置的坑
+- 🐍 Python 的各种隐式约定
+- 🔥 PyTorch / ML 框架的版本兼容
+- 📊 数据集的获取与处理
+- 🛠 各种工具链的配置问题
 
-本站同时也是**实验三 Jekyll 静态网站生成**课程的作业成果，完整展示了：
+## 搭建方式
 
-1. Jekyll 站点搭建流程（Docker 环境）
-2. Markdown 内容编写与发布
-3. GitHub Pages 部署与访问
+本站使用 **Jekyll** 静态网站生成器搭建，托管于 **GitHub Pages**。
 
-## 联系方式
+主题为自定义的**简笔画手绘风格**——牛皮纸底色、手写体标题、涂鸦边框，像一本真实的笔记本。
+
+## 关于我
+
+一个在 ML/NLP 方向上不断踩坑、不断成长的学生。
 
 - 🐙 GitHub: [shibanxiaya](https://github.com/shibanxiaya)
 - 🌐 博客: [shibanxiaya.github.io](https://shibanxiaya.github.io)
+
+---
+
+*每个 bug 都是一次学习的机会。共勉。*
